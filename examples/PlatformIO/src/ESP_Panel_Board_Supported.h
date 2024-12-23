@@ -7,7 +7,7 @@
 #pragma once
 
 /* Set to 1 if using a supported board */
-#define ESP_PANEL_USE_SUPPORTED_BOARD       (0)         // 0/1
+#define ESP_PANEL_USE_SUPPORTED_BOARD       (1)         // 0/1
 
 #if ESP_PANEL_USE_SUPPORTED_BOARD
 /**
