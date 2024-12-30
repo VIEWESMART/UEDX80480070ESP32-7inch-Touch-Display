@@ -57,8 +57,8 @@
 /* To use the built-in examples and demos of LVGL uncomment the includes below respectively.
  * You also need to copy `lvgl/examples` to `lvgl/src/examples`. Similarly for the demos `lvgl/demos` to `lvgl/src/demos`.
  */
-// #include <demos/lv_demos.h>
-#include <examples/lv_examples.h>
+#include <demos/lv_demos.h>
+// #include <examples/lv_examples.h>
 
 void setup()
 {
