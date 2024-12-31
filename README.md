@@ -1,4 +1,4 @@
-<h1 align = "center">UEDX80480070ESP32-7inch-Display-800_480</h1>
+<h1 align = "center">UEDX80480070ESP32-7inch-Touch-Display</h1>
 
 <p align="center" width="80%">
     <img src="image/7inch.jpg" alt="">
