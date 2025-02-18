@@ -49,55 +49,6 @@
 // #define BOARD_ESP32_P4_FUNCTION_EV_BOARD
 
 /*
- * Elecrow (https://www.elecrow.com):
- *
- *  - BOARD_ELECROW_CROWPANEL_7_0 (ELECROW_CROWPANEL_7_0): https://www.elecrow.com/esp32-display-7-inch-hmi-display-rgb-tft-lcd-touch-screen-support-lvgl.html
- */
-// #define BOARD_ELECROW_CROWPANEL_7_0
-
-/*
- * M5Stack (https://m5stack.com/):
- *
- *  - BOARD_M5STACK_M5CORE2 (M5STACK_M5CORE2): https://docs.m5stack.com/en/core/core2
- *  - BOARD_M5STACK_M5DIAL (M5STACK_M5DIAL): https://docs.m5stack.com/en/core/M5Dial
- *  - BOARD_M5STACK_M5CORES3 (M5STACK_M5CORES3): https://docs.m5stack.com/en/core/CoreS3
- */
-// #define BOARD_M5STACK_M5CORE2
-// #define BOARD_M5STACK_M5DIAL
-// #define BOARD_M5STACK_M5CORES3
-
-/*
- * Shenzhen Jingcai Intelligent Supported Boards (https://www.displaysmodule.com/):
- *
- *  - BOARD_ESP32_4848S040C_I_Y_3 (ESP32-4848S040C_I_Y_3):
- *      - https://www.displaysmodule.com/sale-41828962-experience-the-power-of-the-esp32-display-module-sku-esp32-4848s040c-i-y-3.html
- *      - http://pan.jczn1688.com/directlink/1/ESP32%20module/4.0inch_ESP32-4848S040.zip
- *
- */
-// #define BOARD_ESP32_4848S040C_I_Y_3
-
-/*
- * Waveshare Supported Boards (https://www.waveshare.com/):
- *
- *  - BOARD_WAVESHARE_ESP32_S3_Touch_LCD_1_85 (ESP32_S3_Touch_LCD_1_85): https://www.waveshare.com/esp32-s3-touch-lcd-1.85.htm
- *  - BOARD_WAVESHARE_ESP32_S3_Touch_LCD_2_1 (ESP32_S3_Touch_LCD_2_1): https://www.waveshare.com/esp32-s3-touch-lcd-2.1.htm
- *  - BOARD_WAVESHARE_ESP32_S3_Touch_LCD_4_3 (ESP32_S3_Touch_LCD_4_3): https://www.waveshare.com/esp32-s3-touch-lcd-4.3.htm
- *  - BOARD_WAVESHARE_ESP32_S3_Touch_LCD_4_3_B (ESP32_S3_Touch_LCD_4_3_B): https://www.waveshare.com/esp32-s3-touch-lcd-4.3B.htm
- *  - BOARD_WAVESHARE_ESP32_S3_Touch_LCD_5 (ESP32_S3_Touch_LCD_5): https://www.waveshare.com/esp32-s3-touch-lcd-5.htm?sku=28117
- *  - BOARD_WAVESHARE_ESP32_S3_Touch_LCD_5_B (ESP32_S3_Touch_LCD_5_B): https://www.waveshare.com/esp32-s3-touch-lcd-5.htm?sku=28151
- *  - BOARD_WAVESHARE_ESP32_S3_Touch_LCD_7 (ESP32_S3_Touch_LCD_7): https://www.waveshare.com/esp32-s3-touch-lcd-7.htm
- *  - BOARD_WAVESHARE_ESP32_P4_NANO (ESP32_P4_NANO): https://www.waveshare.com/esp32-p4-nano.htm
- */
-// #define BOARD_WAVESHARE_ESP32_S3_Touch_LCD_1_85
-// #define BOARD_WAVESHARE_ESP32_S3_Touch_LCD_2_1
-// #define BOARD_WAVESHARE_ESP32_S3_Touch_LCD_4_3
-// #define BOARD_WAVESHARE_ESP32_S3_Touch_LCD_4_3_B
-// #define BOARD_WAVESHARE_ESP32_S3_Touch_LCD_5
-// #define BOARD_WAVESHARE_ESP32_S3_Touch_LCD_5_B
-// #define BOARD_WAVESHARE_ESP32_S3_Touch_LCD_7
-// #define BOARD_WAVESHARE_ESP32_P4_NANO
-
-/*
  * VIEWE Supported Boards (https://viewedisplay.com/):
  *  
  *  - BOARD_VIEWE_ESP_S3_Touch_LCD_24(UEDX24320028E-WB-A):https://viewedisplay.com/product/esp32-2-4-inch-240x320-rgb-ips-tft-display-touch-screen-arduino-lvgl-wifi-ble-uart-smart-module/
