@@ -13,4 +13,4 @@ idf_component_register(
         driver
 )
 
-target_compile_options(${COMPONENT_LIB} PRIVATE -Wno-missing-field-initializers)
+target_compile_options(${COMPONENT_LIB} PUBLIC -Wno-missing-field-initializers)
