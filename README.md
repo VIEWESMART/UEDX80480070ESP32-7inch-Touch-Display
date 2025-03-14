@@ -63,7 +63,7 @@ Note: The model name is determined by the screen resolution and size
  facing up).
 - USB-C power supply (5V/1A adapter).
 - UART for programming, debugging, or power supply (5V/1A adapter).
-- For the first programming, press and hold the BOOT button to enter 
+- For the first programming, press and hold the `BOOT` button to enter 
  download mode.
 <p align="center" width="100%">
     <img src="image/overview.png" alt="example">
