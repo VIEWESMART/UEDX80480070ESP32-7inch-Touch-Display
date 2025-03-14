@@ -1,7 +1,7 @@
 <h1 align = "center">VIEWE ESP32-S3 Smart Display Quick Guide </h1>
-<p align="center" width="80%">
+<p align="center">
     <img src="image/7inch.jpg" alt="">
-    <h1 align = "center">Model: UEDX80480070E-WB-A (800x480/7-inch RGB)</h1>
+    <h1 align = "center" style="font-size: 18px;">Model: UEDX80480070E-WB-A</h1>
 </p>
 
 * **[中文版](./README_CN.md)**
@@ -79,12 +79,12 @@ Note: The model name is determined by the screen resolution and size
 | `[ESP-IDF]` | `[V5.1/5.2/5.3]` |
 | `[Arduino IDE]` | `[esp32 >=v3.0.7]` | 
 | `[Platformio IDE]` |  |
-### ESP-IDF Framework
+### ESP-IDF Framework ([Novice tutorial]())
 - Supported Versions: v5.1/5.2/5.3
 - Download the example code from the repository and compile/run it directly.
 - Repository Address: [examples](examples/esp_idf)
 
-### Arduino Framework
+### Arduino Framework ([Novice tutorial]())
 1. Install[Arduino](https://www.arduino.cc/en/software),Choose installation based on your system type.
 2. Install the ESP32 core: Search for and download `esp32`(by Espressif >= v3.0.7) in the `Board Manager`.
 3. Install the required libraries:
@@ -110,7 +110,7 @@ Note: The model name is determined by the screen resolution and size
 7. Select the correct port.
 8. Click "<kbd>[√](image/8.png)</kbd>" in the upper right corner to compile,If the compilation is correct, connect the microcontroller to the computer,Click "<kbd>[→](image/9.png)</kbd>" in the upper right corner to download.
 
-#### PlatformIO
+#### PlatformIO ([Novice tutorial]())
 1. Install[VisualStudioCode](https://code.visualstudio.com/Download),Choose installation based on your system type.
 
 2. Open the "Extension" section of the Visual Studio Code software sidebar(Alternatively, use "<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>X</kbd>" to open the extension),Search for the "PlatformIO IDE" extension and download it.
