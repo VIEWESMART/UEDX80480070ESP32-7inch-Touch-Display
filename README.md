@@ -1,4 +1,4 @@
-<h1 align = "center">UEDX80480070ESP32-7inch-Touch-Display</h1>
+<h1 align = "center">VIEWE ESP32-S3 Smart Display Quick Guide</h1>
 
 <p align="center" width="80%">
     <img src="image/7inch.jpg" alt="">
@@ -9,13 +9,14 @@
 ## Introduction to the Repository Directory
 
 ```
-├── Libraries                 Library files required for the Arduino example  
-├── Schematic                 The circuit schematic of the product   
-├── examples                  Sample files, including the IDF framework and the Arduino framework
-├── image                     Product or sample project related images
-├── information               Product specifications, including the IC or peripherals involved
-├── tools                     Burn tool and image conversion tool
-└── README.md                 This is the file you are currently reading,Give a brief introduction to the product
+├── Libraries              Library files required for the Arduino example  
+├── Schematic              The circuit schematic of the product   
+├── examples               Sample files, including the IDF framework and the Arduino framework
+├── firmware               firmware
+├── image                  Product or sample project related images
+├── information            Product specifications, including the IC or peripherals involved
+├── tools                  Burn tool and image conversion tool
+└── README.md              This is the file you are currently reading,Give a brief introduction to the product
 ```
 
 ## Version iteration:
