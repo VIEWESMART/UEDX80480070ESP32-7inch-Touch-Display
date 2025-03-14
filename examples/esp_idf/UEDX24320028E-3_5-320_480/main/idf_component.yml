@@ -1,0 +1,34 @@
+dependencies:
+  # espressif/knob: "^0.1.5"
+  idf: ">5.0.4,!=5.1.1"
+  # esp_lcd_gc9b71:
+  #   public: true
+  #   version: '*'
+  # esp_lcd_sh8601:
+  #   public: true
+  #   version: '*'
+  # esp_lcd_gca01:
+  #   public: true
+  #   version: '*'
+  # esp_lcd_spd2010:
+  #   public: true
+  #   version: '*'
+  # esp_lcd_touch_cst816s:
+  #   public: true
+  #   version: ^1
+  esp_lcd_touch_spd2010:
+    public: true
+    version: ^0.0.1
+  espressif/esp_lvgl_port:
+    public: true
+    version: ^2.3.2
+  espressif/esp_lcd_gc9a01:
+    public: true
+    version: '*'
+  espressif/esp_lcd_st7796:
+    public: true
+    version: '*'
+  idf: '>5.0.4,!=5.1.1'
+  lvgl/lvgl:
+    public: true
+    version: "^9.2.0"
