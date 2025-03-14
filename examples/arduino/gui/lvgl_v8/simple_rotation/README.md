@@ -17,7 +17,7 @@ For `RGB/MIPI-DSI` interfaces, this example does not support the avoid tearing f
 
 - Install the following SDK and library dependencies:
 
-  - See [SDK & Dependencies](https://github.com/VIEWESMART/ESP32_Display_Panel/blob/master/docs/envs/use_with_arduino.md#sdk--dependencies) and [Installing Libraries](https://github.com/VIEWESMART/ESP32_Display_Panel/blob/master/docs/envs/use_with_arduino.md#installing-libraries) sections for more information
+  - See [SDK & Dependencies](../../../../../docs/envs/use_with_arduino.md#sdk--dependencies) and [Installing Libraries](../../../../../docs/envs/use_with_arduino.md#installing-libraries) sections for more information
 
 - Install the following example dependencies:
 
@@ -29,23 +29,23 @@ For `RGB/MIPI-DSI` interfaces, this example does not support the avoid tearing f
 
   - This example already has the [esp_panel_board_supported_conf.h](./esp_panel_board_supported_conf.h) and [esp_panel_board_custom_conf.h](./esp_panel_board_custom_conf.h) configuration files in the project directory. But no board configuration enabled by default, before compiling, please edit the configuration file according to your target board:
 
-    - **If using a [supported board](https://github.com/VIEWESMART/ESP32_Display_Panel/blob/master/README.md#supported-boards)**, edit the *esp_panel_board_supported_conf.h* file and set `ESP_PANEL_BOARD_DEFAULT_USE_SUPPORTED` to `1`. Then uncomment the target board definition in the file
+    - **If using a [supported board](../../../../../README.md#supported-boards)**, edit the *esp_panel_board_supported_conf.h* file and set `ESP_PANEL_BOARD_DEFAULT_USE_SUPPORTED` to `1`. Then uncomment the target board definition in the file
     - **If using a custom board**, edit the *esp_panel_board_custom_conf.h* file and set `ESP_PANEL_BOARD_DEFAULT_USE_CUSTOM` to `1`. Then change other configurations as needed in the file
 
   - This example already has the [esp_panel_drivers_conf.h](./esp_panel_drivers_conf.h) configuration file in the project directory. Edit this file as needed.
-  - see [Board Configuration Guide](https://github.com/VIEWESMART/ESP32_Display_Panel/blob/master/docs/envs/use_with_arduino.md#configuration-guide) for more information
+  - see [Board Configuration Guide](../../../../../docs/envs/use_with_arduino.md#configuration-guide) for more information
 
 - [Optional] `esp-lib-utils` :
 
   - This example already has the [esp_utils_conf.h](./esp_utils_conf.h) configuration file in the project directory. Edit this file as needed
-  - See [Configuring esp-lib-utils](https://github.com/VIEWESMART/ESP32_Display_Panel/blob/master/docs/envs/use_with_arduino.md#configuring-esp-lib-utils) section for more information
+  - See [Configuring esp-lib-utils](../../../../../docs/envs/use_with_arduino.md#configuring-esp-lib-utils) section for more information
 
 - [Optional] `lvgl` :
 
   - This example already has the [lv_conf.h](./lv_conf.h) configuration file which been modified with the recommended configurations in the project directory
   - Change the `LV_COLOR_16_SWAP` macro definition to `1` if using `SPI/QSPI` interface, or `0` if using other interfaces
   - Change other configurations in the file as needed
-  - See [Configuring LVGL](https://github.com/VIEWESMART/VIEWE-FAQ/blob/main/Arduino-FAQ/English/FAQ.md#how-to-add-an-lvgl-library-and-how-to-configure) section for more information
+  - See [Configuring LVGL](../../../../../docs/envs/use_with_arduino.md#configuring-lvgl) section for more information
 
 ### Step 3. Configure the example
 
@@ -62,7 +62,7 @@ For `RGB/MIPI-DSI` interfaces, this example does not support the avoid tearing f
 - Change the `PSRAM` option to `OPI PSRAM` if using `ESP32S3R8 + RGB LCD`, or `Enabled` if using `ESP32P4 + MIPI-DSI LCD`
 - Change the `USB CDC On Boot` option to `Enabled` if using `USB` port, or `Disabled` if using `UART` port. If this configuration differs from previous flashing, first enable `Erase All Flash Before Sketch Upload`, then it can be disabled after flashing.
 - Change other configurations as needed
-- see [Configuring Arduino IDE](https://github.com/VIEWESMART/ESP32_Display_Panel/blob/master/docs/board/board_viewe.md#arduino-ide) for more information
+- see [Configuring Arduino IDE](../../../../../docs/envs/use_with_arduino.md#configuring-arduino-ide) for more information
 
 ### Step 5. Compile and upload the project
 
@@ -100,4 +100,4 @@ Rotate right
 
 ## Troubleshooting
 
-Please check the [Viewe-FAQ](https://github.com/VIEWESMART/ESP32_Display_Panel/blob/master/docs/envs/use_with_arduino.md#faq) or [Espressif-FAQ](https://github.com/esp-arduino-libs/ESP32_Display_Panel/blob/master/docs/envs/use_with_arduino.md#faq) first to see if the same question exists. If not, please create a [Viewe-GitHub_Issue](https://github.com/VIEWESMART/ESP32_Display_Panel/issues) or [Espressif-Github Issue](https://github.com/esp-arduino-libs/ESP32_Display_Panel/issues). We will get back to you as soon as possible.
+Please check the [FAQ](../../../../../docs/envs/use_with_arduino.md#faq) first to see if the same question exists. If not, please create a [Github Issue](https://github.com/esp-arduino-libs/ESP32_Display_Panel/issues). We will get back to you as soon as possible.
