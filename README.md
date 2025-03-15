@@ -20,14 +20,15 @@
 ## Repository Directory Overview
 
 ```
-├── Libraries              Library files required for the Arduino example  
-├── Schematic              The circuit schematic of the product   
-├── examples               Sample files, including the IDF framework and the Arduino framework
-├── firmware               firmware
-├── image                  Product or sample project related images
-├── information            Product specifications, including the IC or peripherals involved
-├── tools                  Burn tool and image conversion tool
-└── README.md              This is the file you are currently reading,Give a brief introduction to the product
+├── Libraries         Library files required for the Arduino example  
+├── Schematic         The circuit schematic of the product   
+├── examples          Sample files, including the IDF framework and the Arduino framework
+├── firmware          firmware
+├── image             Product or sample project related images
+├── information       Product specifications, including the IC or peripherals involved
+├── tools             Burn tool and image conversion tool
+├── README_CN.md      Chinese version Quick Guide and Product Brief
+└── README.md         English version of the quick guide and product introduction
 ```
 
 ## PurchaseLink
