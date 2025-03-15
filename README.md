@@ -52,12 +52,14 @@
 * Driver chip: EK9716BD3+EK73002AB2
 * Compatibility library:  ESP32_Display_Panel
 * Bus communication protocol: RGB
+* For more details：[Display Datasheet](information/ALL-UE070WV-RB40-A092A.pdf)
   
 Note: The model name is determined by the screen resolution and size
 
 ### 3. Touch
 * Chip: GT911
 * Bus communication protocol: IIC
+* For more details：[Touch IC Datasheet_EN](information/GT911_EN_Datasheet.pdf)
 
 ## Hardware Connections
 - Connect the screen ribbon cable and touch ribbon cable (gold contacts 
