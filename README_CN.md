@@ -53,12 +53,14 @@
 - 驱动芯片: EK9716BD3+EK73002AB2
 - 兼容库: ESP32_Display_Panel
 - 总线协议: RGB
+- 详细资料：[屏幕数据手册](information/ALL-UE070WV-RB40-A092A.pdf)
 
 注：型号由屏幕尺寸和分辨率决定
 
 ### 3.触摸模块
 - 芯片: GT911
 - 总线协议: IIC
+- 详细资料：[触摸IC数据手册](information/GT911_CN_Datasheet.pdf)
 
 ## 硬件连接
 - 连接屏幕排线和触摸排线（金色触点朝上）
