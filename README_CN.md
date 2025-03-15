@@ -210,14 +210,20 @@
 
 * Q. 按照教程仍无法搭建开发环境怎么办？
 * A. 可参考[VIEWE-FAQ]()文档进行环境搭建
+  
+<br />
 
 * Q. Arduino提示更新库文件是否要更新？
 * A. 建议选择不更新，不同版本可能存在兼容性问题
+
+<br />
 
 * Q. 开发板Uart接口无数据输出是否损坏？
 * A. 默认使用USB作为Uart0输出，需配置后启用外部接口：
   - PlatformIO用户修改platformio.ini中的build_flags
   - Arduino用户在Tools菜单中设置"USB CDC On Boot: Disabled"
+
+<br />
 
 * Q. 开发板持续下载失败怎么办？
 * A. 请按住"BOOT"键后重新尝试下载
