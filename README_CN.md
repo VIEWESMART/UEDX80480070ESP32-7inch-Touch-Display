@@ -21,15 +21,15 @@
 ## 仓库目录说明
 
 ```
-├── Libraries Arduino 示例所需库文件
-├── Schematic 产品电路图
-├── examples 示例文件（包含 IDF 和 Arduino 框架）
-├── firmware 固件文件
-├── image 产品及示例相关图片
-├── information 产品规格书（含芯片及外设资料）
-├── tools 烧录工具及镜像转换工具
-├── README_CN.md 中文版快速指南和产品简介
-└── README.md 英文版快速指南和产品简介
+├── Libraries     Arduino 示例所需库文件
+├── Schematic     产品电路图
+├── examples      示例文件（包含 IDF 和 Arduino 框架）
+├── firmware      固件文件
+├── image         产品及示例相关图片
+├── information   产品规格书（含芯片及外设资料）
+├── tools         烧录工具及镜像转换工具
+├── README_CN.md  中文版快速指南和产品简介
+└── README.md     英文版快速指南和产品简介
 ```
 
 ## 购买链接
