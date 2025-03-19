@@ -16,6 +16,7 @@
 - [Information](#information)
 - [firmware download](#firmware-download)
 - [FAQ](#faq)
+- [Technical Suppor](#technical-suppor)
 
 ## Repository Directory Overview
 
@@ -234,6 +235,6 @@ Note: The model name is determined by the screen resolution and size
 * Q. Why is my board continuously failing to download the program?
 * A. Please hold down the "BOOT" button and try downloading the program again.
 
-
-
-
+## Technical Support:
+- Email: smartrd1@viewedisplay.com
+- WeChat: 
