@@ -98,8 +98,8 @@ Note: The model name is determined by the screen resolution and size
     * Edit the `esp_panel_board_supported_conf.h` file.
     * Enable the macro: `#define ESP_PANEL_BOARD_DEFAULT_USE_SUPPORTED  (1)`
     * Uncomment the corresponding screen model definition: `#define BOARD_VIEWE_UEDX80480070E_WB_A`
-6. Configure tool options (S3):
-   
+6. Configure tool options :
+    #### ESP32-S3
     | Setting                               | Value                         |
     | :-------------------------------: | :-------------------------------: |
     | Board                                 | ESP32S3 Dev Module            |
