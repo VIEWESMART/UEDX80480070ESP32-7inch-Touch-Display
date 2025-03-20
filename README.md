@@ -16,6 +16,7 @@
 - [Information](#information)
 - [firmware download](#firmware-download)
 - [FAQ](#faq)
+- [Technical Suppor](#technical-suppor)
 
 ## Repository Directory Overview
 
@@ -98,8 +99,8 @@ Note: The model name is determined by the screen resolution and size
     * Edit the `esp_panel_board_supported_conf.h` file.
     * Enable the macro: `#define ESP_PANEL_BOARD_DEFAULT_USE_SUPPORTED  (1)`
     * Uncomment the corresponding screen model definition: `#define BOARD_VIEWE_UEDX80480070E_WB_A`
-6. Configure tool options (S3):
-   
+6. Configure tool options :
+    #### ESP32-S3
     | Setting                               | Value                         |
     | :-------------------------------: | :-------------------------------: |
     | Board                                 | ESP32S3 Dev Module            |
@@ -234,6 +235,6 @@ Note: The model name is determined by the screen resolution and size
 * Q. Why is my board continuously failing to download the program?
 * A. Please hold down the "BOOT" button and try downloading the program again.
 
-
-
-
+## Technical Support:
+- Email: smartrd1@viewedisplay.com
+- WeChat: 
