@@ -90,7 +90,7 @@ Note: The model name is determined by the screen resolution and size
 
 ### Arduino Framework ([Novice tutorial]())
 1. Install[Arduino](https://www.arduino.cc/en/software),Choose installation based on your system type.
-2. Install the ESP32 core: Search for and download `esp32`(by Espressif >= v3.0.7) in the `Board Manager`.
+2. Install the ESP32 core: Search for and download `esp32`(by Espressif >= v3.0.9) in the `Board Manager`.
 3. Install the required libraries:
     * Search and install `ESP32_Display_Panel` (v1.0.0). Select `Yes` for automatic dependency installation.
     * Install the `LVGL` (v8.4.0) library. 
