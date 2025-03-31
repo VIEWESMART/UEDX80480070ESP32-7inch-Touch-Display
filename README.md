@@ -170,10 +170,10 @@ Note: The model name is determined by the screen resolution and size
 
 | SD Card Pin  | ESP32S3 Pin|
 | :------------------: | :------------------:|
-| D1         | IO18       |
-| D2         | IO15       |
-| MOSI        | IO17       |
-| MISO         | IO16       |
+| CS         | IO10       |
+| CLK        | IO12       |
+| MOSI       | IO11       |
+| MISO       | IO13       |
 
 | UART/RS485 Pin  | ESP32S3 Pin|
 | :------------------: | :------------------:|
