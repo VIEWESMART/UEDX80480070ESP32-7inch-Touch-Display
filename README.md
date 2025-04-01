@@ -130,7 +130,7 @@ Note: The model name is determined by the screen resolution and size
 | :------------------: | :------------------:|
 | DE         | IO40       |
 | VS         | IO41       |
-| HS         | IO439       |
+| HS         | IO39       |
 | PCLK       | IO42       |
 |   R0       |  IO45   |
 |   R1       |  IO48   |
