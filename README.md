@@ -148,7 +148,6 @@ Note: The model name is determined by the screen resolution and size
 |   B2       |  IO46   |
 |   B3       |  IO9   |
 |   B4       |  IO1   |
-| RST        | IO39       |
 | BACKLIGHT  | IO2       |
 
 | Touch Chip Pin  | ESP32S3 Pin|
