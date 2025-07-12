@@ -81,23 +81,24 @@
 | `[Arduino IDE]` | `[esp32 >=v3.0.7]` |
 | `[Platformio IDE]` |  |
 
-### ESP-IDF框架 ([新手教程]())
+### ESP-IDF框架 ([新手教程](https://github.com/VIEWESMART/VIEWE-Tutorial/blob/main/esp-idf/esp-idf%E6%96%B0%E6%89%8B%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B.md))
 - 支持版本: v5.1/5.2/5.3
 - 直接从仓库下载示例代码编译运行
 - 代码路径: [examples](examples/esp_idf)
 
-### Arduino框架 ([新手教程]())
+### Arduino框架 ([详细教程](https://github.com/VIEWESMART/VIEWE-Tutorial/blob/main/Arduino%20Tutorial/%E5%9C%A8Arduino%20IDE%20%E4%B8%AD%E4%BD%BF%E7%94%A8.md))
 1. 安装[Arduino](https://www.arduino.cc/en/software)
 2. 安装ESP32核心：在Board Manager中搜索下载`esp32`（版本>=v3.0.7）
 3. 安装依赖库：
-    * 搜索安装`ESP32_Display_Panel`（v1.0.0），自动安装依赖
+    * 导航到库管理
+    * 搜索安装`ESP32_Display_Panel`（>=v1.0.0），自动安装依赖
     * 安装`LVGL`（v8.4.0）库
-4. 打开示例：`ESP32_Display_Panel`-> `examples` -> `arduino` -> `gui` -> `lvgl_v8`
-5. 开发板配置：
+5. 打开示例：导航到`File` ->`Examples` -> `ESP32_Display_Panel` -> `examples` -> `arduino` -> `gui` -> `lvgl_v8`
+6. 开发板配置：
     * 编辑`esp_panel_board_supported_conf.h`
-    * 启用宏定义: `#define ESP_PANEL_BOARD_DEFAULT_USE_SUPPORTED  (1)`
+    * 启用宏定义: `#define ESP_PANEL_BOARD_DEFAULT_USE_SUPPORTED  (0)` 改为 `#define ESP_PANEL_BOARD_DEFAULT_USE_SUPPORTED  (1)`
     * 取消注释屏幕型号定义: `#define BOARD_VIEWE_UEDX80480070E_WB_A`
-6. 工具配置（S3）：
+7. 工具配置（S3）：
 
     | 配置项                            | 值                                   |
     | :-------------------------------: | :-------------------------------:    |
@@ -109,8 +110,8 @@
     | Partition Scheme                  | 16M Flash (3MB APP/9.9MB FATFS)      |
     | PSRAM                             | OPI PSRAM                            |
 
-7. 选择正确端口
-8. 点击右上角"<kbd>[√](image/8.png)</kbd>"编译，成功后连接设备，点击"<kbd>[→](image/9.png)</kbd>"下载
+8. 选择正确端口
+9. 点击右上角"<kbd>[√](image/8.png)</kbd>"编译，成功后连接设备，点击"<kbd>[→](image/9.png)</kbd>"下载
 
 ### PlatformIO ([新手教程]())
 1. 安装[VisualStudioCode](https://code.visualstudio.com/Download)
@@ -165,10 +166,10 @@
 
 | SD卡引脚 | ESP32S3引脚 |
 |--------|------------|
-| D1     | IO18       |
-| D2     | IO15       |
-| MOSI   | IO17       |
-| MISO   | IO16       |
+| CS     | IO10       |
+| CLK    | IO12       |
+| MOSI   | IO11       |
+| MISO   | IO13       |
 
 | UART/RS485引脚 | ESP32S3引脚 |
 |---------------|------------|
