@@ -1,7 +1,7 @@
 <h1 align = "center">VIEWE ESP32-S3智能显示屏快速指南</h1>
 
 <div align="center">
-    <img src="image/7inch.jpg" alt="7英寸显示屏">
+    <img src="image/7inch.png" alt="7英寸显示屏">
     <h1 style="font-size: 18px;">型号: UEDX80480070E-WB-A</h1>
 </div>
 
