@@ -1,36 +1,13 @@
 <h1 align = "center">VIEWE ESP32-S3智能显示屏快速指南</h1>
 
-<div align="center">
-    <img src="image/7inch.png" alt="7英寸显示屏">
-    <h1 style="font-size: 18px;">型号: UEDX80480070E-WB-A</h1>
-</div>
-
 * **[English Version](./README.md)**
 
-## 目录
-- [仓库目录说明](#仓库目录说明)
-- [购买链接](#购买链接)
-- [硬件概述](#硬件概述)
-- [快速上手](#快速上手)
-- [引脚定义](#引脚定义)
-- [电路图](#电路图)
-- [技术资料](#技术资料)
-- [固件下载](#固件下载)
-- [常见问题](#常见问题)
+<div align="center">
+    <h1 style="font-size: 18px;">型号: UEDX80480070E-WB-A</h1>
+    <img src="image/7inch.png" alt="7英寸显示屏">
+</div>
 
-## 仓库目录说明
 
-```
-├── Libraries     Arduino 示例所需库文件
-├── Schematic     产品电路图
-├── examples      示例文件（包含 IDF 和 Arduino 框架）
-├── firmware      固件文件
-├── image         产品及示例相关图片
-├── information   产品规格书（含芯片及外设资料）
-├── tools         烧录工具及镜像转换工具
-├── README_CN.md  中文版快速指南和产品简介
-└── README.md     英文版快速指南和产品简介
-```
 
 ## 购买链接
 
