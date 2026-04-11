@@ -1,0 +1,224 @@
+esphome:
+  name: viewe-7inch-display
+  friendly_name: VIEWE 7inch Display
+  platformio_options:
+    board_build.flash_mode: dio
+    board_build.mcu: esp32s3
+    board_build.f_cpu: 240000000L
+
+esp32:
+  board: esp32-s3-devkitc-1
+  variant: esp32s3
+  flash_size: 16MB
+  partitions: partitions_16MB.csv
+  framework:
+    type: esp-idf
+    sdkconfig_options:
+      # PSRAM configuration
+      CONFIG_ESP32S3_SPIRAM_SUPPORT: y
+      CONFIG_SPIRAM: y
+      CONFIG_SPIRAM_MODE_OCT: y
+      CONFIG_SPIRAM_SPEED_80M: y
+      CONFIG_IDF_EXPERIMENTAL_FEATURES: y
+      CONFIG_SPIRAM_FETCH_INSTRUCTIONS: y
+      CONFIG_SPIRAM_RODATA: y
+      # LCD RGB panel configuration
+      CONFIG_ESP_LCD_RGB_ISR_IRAM_SAFE: y
+      CONFIG_ESP_LCD_RGB_RESTART_IN_VSYNC: y
+      # Memory configuration
+      CONFIG_SPIRAM_MALLOC_ALWAYSINTERNAL: "4096"
+      CONFIG_SPIRAM_MALLOC_RESERVE_INTERNAL: "32768"
+
+
+psram:
+  mode: octal
+  speed: 80MHz  
+
+# External components - using local path for testing
+external_components:
+  - source:
+      type: local
+      path: components
+    components: [viewe_display]
+
+# Logger configuration
+logger:
+  level: DEBUG
+
+# Enable Home Assistant API
+api:
+  encryption:
+    key: "YQyUKJ2x2K3hhaW2n8Y7kQmVJR9GQHQ2PkXRpCYYNWk="
+
+# OTA updates
+ota:
+  - platform: esphome
+    password: "changeme123"
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+  ap:
+    ssid: "Chair-Display Fallback Hotspot"
+    password: "xzQ3MxpXU8jM"
+
+
+# Web server
+web_server:
+   port: 80
+
+
+# Display configuration using custom component with LVGL
+display:
+  - platform: viewe_display
+    id: my_display
+    brightness: 100%
+    auto_clear_enabled: false  # LVGL handles clearing
+
+# LVGL Graphics configuration
+lvgl:
+  displays:
+    - my_display
+  touchscreens:
+    - touchscreen_id: touch
+  buffer_size: 50%  # Reduced buffer size to save memory
+  log_level: WARN  # Less logging to save space
+  color_depth: 16
+  byte_order: big_endian
+  #disp_bg_color: 0x000000
+  bg_image_src: starry_night
+  
+  # Define pages
+  pages:
+    - id: main_page
+      widgets:
+        # Simple buttons without container
+        - button:
+            x: 50
+            y: 50
+            width: 150
+            height: 60
+            widgets:
+              - label:
+                  text: "Light ON"
+                  align: CENTER
+            on_press:
+              - light.turn_on: 
+                  id: back_light
+                  brightness: 100%
+        
+        - button:
+            x: 250
+            y: 50
+            width: 150
+            height: 60
+            widgets:
+              - label:
+                  text: "Light OFF"
+                  align: CENTER
+            on_press:
+              - light.turn_off: back_light
+        
+        - button:
+            x: 450
+            y: 50
+            width: 150
+            height: 60
+            checkable: true
+            widgets:
+              - label:
+                  text: "Toggle LED"
+                  align: CENTER
+            on_press:
+              - light.toggle: 
+                  id: status_led
+
+
+# Add background image
+image:
+  - file: "starrynight.png"
+    id: starry_night
+    type: RGB565
+    resize: 800x480
+
+
+# Touchscreen configuration
+touchscreen:
+  platform: gt911
+  id: touch
+  #interrupt_pin: 18 # no idea why but removing this made it work!
+  #interrupt_pin: GPIO18
+  reset_pin: GPIO38
+  calibration:
+    x_min: 0
+    x_max: 800
+    y_min: 0
+    y_max: 475
+
+  on_touch:
+    - lambda: |-
+        ESP_LOGI("cal", "x=%d, y=%d, x_raw=%d, y_raw=%0d",
+            touch.x,
+            touch.y,
+            touch.x_raw,
+            touch.y_raw
+            );
+    - light.turn_on:
+        id: back_light
+        brightness: 100%
+    - script.execute: backlight_timer
+
+# I2C bus configuration
+i2c:
+  sda: GPIO19
+  scl: GPIO20
+  frequency: 100kHz
+  scan: True
+
+# Optional: Light component for backlight control
+light:
+  - platform: monochromatic
+    id: back_light
+    name: "Display Backlight"
+    output: gpio_backlight_pwm
+    default_transition_length: 250ms
+    restore_mode: ALWAYS_OFF  # Start with backlight off
+  - platform: esp32_rmt_led_strip
+    id: status_led
+    rgb_order: GRB
+    pin: 0
+    num_leds: 1
+    chipset: ws2812
+    name: "status LED"    
+
+output:
+  - platform: ledc
+    pin: GPIO2
+    id: gpio_backlight_pwm
+    frequency: 1000Hz
+
+# Optional: Sensors for monitoring
+sensor:
+  - platform: uptime
+    name: "Uptime"
+  
+  - platform: wifi_signal
+    name: "WiFi Signal"
+    update_interval: 60s
+
+# Time component for displaying time
+time:
+  - platform: homeassistant
+    id: homeassistant_time
+    # Or use SNTP
+    # - platform: sntp
+    #   id: sntp_time
+    #   timezone: "America/New_York"
+
+# Script to turn off backlight after timeout
+script:
+  - id: backlight_timer
+    mode: restart  # Restart timer on each touch
+    then:
+      - delay: 30s  # Turn off after 30 seconds of no touch
+      - light.turn_off: back_light
